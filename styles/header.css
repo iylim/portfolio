@@ -1,0 +1,53 @@
+header {
+  height: 4rem;
+  background-color: rgba(51, 51, 51, 0.8);
+  background-color: #333;
+  padding: 0px 25px;
+  color: #fff;
+  line-height: 4rem;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+header > * {
+  display: inline-block;
+}
+header h1 h2 {
+  margin-bottom: 0;
+}
+nav {
+  height: 100%;
+  vertical-align: top;
+  float: right;
+}
+nav ul {
+  list-style: none;
+  height: 100%;
+}
+nav ul li {
+  display: inline-block;
+  background-color: rgba(74, 74, 238, 0.5);
+  height: 100%;
+  padding: 0px 10px;
+  transition: background-color 350ms;
+  position: relative;
+}
+nav ul li:hover {
+  background-color: rgba(74, 74, 238, 1);
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+justify-items: center;
+}
+
+nav ul li .submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+nav ul li .submenu li {
+  width: 100%;
+}
